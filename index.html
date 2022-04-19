@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="A personal portfolio webpage created for the FreeCodeCamp's Responsive Web Design Certification.">
+  <title>Yashita Kapoor</title>
+</head>
+
+<body>
+
+  <nav id="navbar" class="nav">
+    <ul>
+      <li>
+        <a href="#home">
+          <span class="code">&lt;</span>
+          Home
+          <span class="code">&#47;&gt;</span>
+        </a>
+      </li>
+      <li>
+        <a href="#about">
+          <span class="code">&lt;</span>
+          About
+          <span class="code">&#47;&gt;</span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#education">
+          <span class="code">&lt;</span>
+          Education
+          <span class="code">&#47;&gt;</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="#contactme">
+          <span class="code">&lt;</span>
+          Contact
+          <span class="code">&#47;&gt;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <section id="home" class="welcome-section">
+    <div>
+      <h1>Hello<span>,</span></h1>
+      <p class="subheading">I'm <span>Yashita Kapoor</span></p>
+      <p class="subtitle">I'm a <span>Full Stack Developer</span></p>
+     <a href="/assets/resume.pdf" download class="button-primary">Resume</a>
+      <button class="button-contactme">Contact Me</button>
+
+
+    </div>
+    <div>
+      <img class="welcome-img" id="desktop-only" src="assets/images/me.jpeg" alt="My Image">
+      <img class="welcome-img" id="mobile-only" src="assets/images/me.jpeg" alt="My Image">
+    </div>
+  </section>
+
+  <section id="about" class="about card primary-bg">
+    <div class="about-container">
+
+      <div id="my-story">
+        <h2>About Me & Academic Honesty</h2>
+
+        <p>I'm a student at Seneca College studying Software Engineering and Data Science in Toronto. I'm very
+          interested in web development and I like travelling and exploring new places.</p>
+        <br />
+        <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic
+          Policy. No part of this assessment has been copied manually or electronically from any other
+          source (including web sites) except for the information supplied by the WEB222 instructors and /
+          or made available in this assessment for my use. I also declare that no part of this assignment
+          has been distributed to other students</p>
+        <br />
+        <p><strong>DATE</strong>: 18th April, 2022</p>
+      </div>
+      <div id="interests-list">
+        <h3>Basic Info</h3>
+        <table>
+          <tr>
+            <td><strong>AGE</strong></td>
+            <td>19</td>
+          </tr>
+          <tr>
+            <td><strong>Email</strong></td>
+            <td class="email">Kapooryashita900@gmail.com</td>
+          </tr>
+          <tr>
+            <td><strong>Language</strong></td>
+            <td>English</td>
+          </tr>
+          <tr>
+            <td><strong>Student ID</strong></td>
+            <td>121497218</td>
+          </tr>
+          <tr>
+            <td><strong>Instructor</strong></td>
+            <td>Muath Alzghool</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="about card secondary-bg">
+    <div class="about-container">
+
+      <div id="interests-list">
+        <img src="https://ieltsnpte.com/updates/wp-content/uploads/2021/01/Seneca-College-photo.jpg-2.jpg" />
+      </div>
+
+      <div id="my-story">
+        <h2>Education</h2>
+
+        <table>
+          <tr>
+            <td><strong>Institute</strong></td>
+            <td>Seneca College, Toronto</td>
+          </tr>
+          <tr>
+            <td><strong>School</strong></td>
+            <td>School of Software Design & Data Science</td>
+          </tr>
+          <tr>
+            <td><strong>Credential</strong></td>
+            <td>Ontario College Diploma</td>
+          </tr>
+
+          <tr>
+            <td><strong>Student ID</strong></td>
+            <td>121497218</td>
+          </tr>
+          <tr>
+            <td><strong>Instructor</strong></td>
+            <td>Muath Alzghool</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="contactme" class="container">
+    <h2 class="text-center">Contact Me</h2>
+
+    <form id="form" method="POST" action="https://httpbin.org/post">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="name" name="name" placeholder="Your name..." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Email</label>
+        </div>
+        <div class="col-75">
+          <input type="email" id="email" name="email" placeholder="Your email..." required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="address">Address</label>
+        </div>
+        <div class="col-75">
+          <textarea id="address" name="address" placeholder="Your address..." rows="3"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="city">City</label>
+        </div>
+        <div class="col-75">
+          <select id="city" name="city">
+            <option value="Calgary, Alberta">Calgary, Alberta</option>
+            <option value="Edmonton, Alberta">Edmonton, Alberta</option>
+            <option value="Halifax, Nova Scotia">Halifax, Nova Scotia</option>
+            <option value="Montreal, Quebec">Montreal, Quebec</option>
+            <option value="Ottawa, Ontario">Ottawa, Ontario</option>
+            <option value="Quebec City, Quebec">Quebec City, Quebec</option>
+            <option value="Toronto, Ontario">Toronto, Ontario</option>
+            <option value="Vancouver, British Columbia">Vancouver, British Columbia</option>
+            <option value="Victoria, Columbia">Victoria, Columbia</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="postcode">Postal Code</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="postcode" name="postcode" placeholder="Your postal code..." required>
+          <p id="error" class="error hidden">Invalid Post Code</p>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="col-25">
+          <label for="Are you hiring?">Purpose</label>
+        </div>
+        <div class="col-75">
+          <input type="radio" id="comment" name="purpose" value="comment" checked>
+          <label for="comment">Comment</label>
+          <input type="radio" id="hiring" name="purpose" value="hiring">
+          <label for="hiring">Hiring</label>
+          <input type="radio" id="question" name="purpose" value="question">
+          <label for="question">Question</label>
+        </div>
+      </div>
+
+      <div class="row hidden" id="hourlyRateInput">
+        <div class="col-25">
+          <label for="hourlyrate">Hourly rate (C$/hr)</label>
+        </div>
+        <div class="col-75">
+          <input type="number" id="hourlyrate" name="hourlyrate" placeholder="Your Hourly Rate...">
+        </div>
+      </div>
+
+      <div class="row hidden" id="companyInput">
+        <div class="col-25">
+          <label for="company">Company Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="company" name="company" placeholder="Your Company Name...">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="message">Message</label>
+        </div>
+        <div class="col-75">
+          <textarea id="message" name="message" placeholder="Your message..." rows="7"></textarea>
+        </div>
+      </div>
+
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+
+
+
+
+    </form>
+  </section>
+
+
+
+  <footer>
+    <p>
+      <span class="code">&lt;</span>
+      <span class="code">&#47;&gt;</span>
+      by Yashita Kapoor
+    </p>
+  </footer>
+
+  <script src="./index.js"></script>
+
+</body>
+
+</html>
